@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public class main {
+void main(){
+    System.out.print("Hello World");
 }
