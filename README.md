@@ -1,4 +1,5 @@
 # JJRAM 🤖
+
 ### Smart Habit Tracker CLI — AI-Powered Productivity Assistant
 
 ![Project Status](https://img.shields.io/badge/Status-In%20Development-yellow)
@@ -9,9 +10,15 @@
 
 ## 📌 Overview
 
-**JJRAM** is a command-line productivity tool that helps users build and maintain consistent habits by combining daily habit logging with an AI-powered insight engine. Rather than simply tracking whether a habit was completed, JJRAM analyzes behavioral patterns over time, detects trends, predicts burnout risks, and delivers personalized, actionable suggestions — all from the terminal.
+**JJRAM** is a command-line productivity tool that helps users build and maintain consistent habits by combining daily
+habit logging with an AI-powered insight engine. Rather than simply tracking whether a habit was completed, JJRAM
+analyzes behavioral patterns over time, detects trends, predicts burnout risks, and delivers personalized, actionable
+suggestions — all from the terminal.
 
-In today's fast-paced world, many people struggle to build consistent habits not because they lack motivation, but because they lack **visibility into their own behavior**. JJRAM bridges that gap by turning raw completion data into meaningful, human-readable feedback that empowers users to make smarter decisions about how and when they pursue their goals.
+In today's fast-paced world, many people struggle to build consistent habits not because they lack motivation, but
+because they lack **visibility into their own behavior**. JJRAM bridges that gap by turning raw completion data into
+meaningful, human-readable feedback that empowers users to make smarter decisions about how and when they pursue their
+goals.
 
 ---
 
@@ -19,11 +26,11 @@ In today's fast-paced world, many people struggle to build consistent habits not
 
 > _Screenshots and demo assets will be added here as the project develops._
 
-| Feature | Preview |
-|---------|---------|
-| Main Menu | *(coming soon)* |
-| Habit Tracker | *(coming soon)* |
-| Stats Dashboard | *(coming soon)* |
+| Feature           | Preview         |
+|-------------------|-----------------|
+| Main Menu         | *(coming soon)* |
+| Habit Tracker     | *(coming soon)* |
+| Stats Dashboard   | *(coming soon)* |
 | AI Insights Panel | *(coming soon)* |
 
 <!-- To add a screenshot, place the image in /assets/screenshots/ and use:
@@ -38,11 +45,11 @@ In today's fast-paced world, many people struggle to build consistent habits not
 - **Streak Tracking** — Automatically calculates current and longest streaks for each habit
 - **Completion Statistics** — View weekly summaries and overall completion rates
 - **AI Insight Engine** — Detects behavioral patterns and delivers personalized suggestions:
-  - Identifies your most consistent habits
-  - Finds your most-skipped days
-  - Detects habit drop-off trends
-  - Predicts burnout risk based on recent performance
-  - Recommends optimal scheduling based on your patterns
+    - Identifies your most consistent habits
+    - Finds your most-skipped days
+    - Detects habit drop-off trends
+    - Predicts burnout risk based on recent performance
+    - Recommends optimal scheduling based on your patterns
 
 ---
 
@@ -63,6 +70,7 @@ In today's fast-paced world, many people struggle to build consistent habits not
 ```
 
 **Sample AI Insights Output:**
+
 ```
 🤖 Smart Insights:
 
@@ -96,12 +104,12 @@ JJRAM/
 
 ## 👥 Team
 
-| Name | Role |
-|------|------|
-| **Abdul Fornah** | Programmer & Designer — CLI menu, navigation, UI design |
-| **John Arthur** | Programmer — Data storage, file I/O, CSV handling |
-| **Jordan Tang** | Project Management — Coordination, planning, timelines |
-| **Max Pridac** | Programmer — Statistics engine, streak & completion logic |
+| Name                 | Role                                                           |
+|----------------------|----------------------------------------------------------------|
+| **Abdul Fornah**     | Programmer & Designer — CLI menu, navigation, UI design        |
+| **John Arthur**      | Programmer — Data storage, file I/O, CSV handling              |
+| **Jordan Tang**      | Project Management — Coordination, planning, timelines         |
+| **Max Pridac**       | Programmer — Statistics engine, streak & completion logic      |
 | **Ramya Bommakanti** | Version Control & Bug Analysis — Git management, QA, debugging |
 
 ---
@@ -109,6 +117,7 @@ JJRAM/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Java 11 or higher
 
 ### Installation
