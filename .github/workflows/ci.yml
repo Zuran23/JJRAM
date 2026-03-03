@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - testing-branch
+      - Approved-branch
+      - master
+  push:
+    branches:
+      - testing-branch
+      - Approved-branch
+      - master
+
+jobs:
+  branch-flow:
+    name: Enforce branch flow
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request' }}
+    steps:
+      - name: Validate allowed PR base/head
+        run: |
+          echo "Base: ${{ github.base_ref }}"
+          echo "Head: ${{ github.head_ref }}"
+          if [ "${{ github.base_ref }}" = "Approved-branch" ] && [ "${{ github.head_ref }}" != "testing-branch" ]; then
+            echo "PRs into Approved-branch must come from testing-branch."
+            exit 1
+          fi
+          if [ "${{ github.base_ref }}" = "master" ] && [ "${{ github.head_ref }}" != "Approved-branch" ]; then
+            echo "PRs into master must come from Approved-branch."
+            exit 1
+          fi
+
+  build:
+    name: Compile Java
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Compile
+        run: |
+          mkdir -p out
+          find src -name "*.java" -print0 | xargs -0 javac -d out
