@@ -4,7 +4,7 @@ package calculator; // Calculator-related classes.
 public class Division { // Placeholder for division behavior.
 
     // Prints the division result.
-    public void divide(double a, double b) {
+    public double divide(double a, double b) {
         double result = 0;
         try {
             result = a / b;
@@ -14,6 +14,7 @@ public class Division { // Placeholder for division behavior.
             System.out.println("Division: " + result);
         }
 
+        return result;
     }
 
 }
