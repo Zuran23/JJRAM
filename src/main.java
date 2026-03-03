@@ -51,7 +51,7 @@ void main() { // Program start.
                         scanner.next();
                     }
                     Division div = new Division();
-                    div.divide(a,b);
+                    div.divide(a, b);
 
                     break; // End case.
                 case 5: // Exit option.
