@@ -29,22 +29,37 @@ void main() {
                 System.out.println("\nAddition");
                 double a = readDouble(scanner, "Enter the first number: ");
                 double b = readDouble(scanner, "Enter the second number: ");
-                double result = addition.add(a, b);
-                System.out.println("Result: " + result);
+                try {
+                    double result = addition.add(a, b);
+                    System.out.println("Result: " + result);
+                }
+                catch (IllegalArgumentException e){
+                    System.out.println(e.getMessage());
+                }
             }
             case 2 -> {
                 System.out.println("\nSubtraction");
                 double a = readDouble(scanner, "Enter the first number: ");
                 double b = readDouble(scanner, "Enter the second number: ");
-                double result = subtraction.subtract(a, b);
-                System.out.println("Result: " + result);
+                try {
+                    double result = subtraction.subtract(a, b);
+                    System.out.println("Result: " + result);
+                }
+                catch (IllegalArgumentException e) {
+                    System.out.println(e.getMessage());
+                }
             }
             case 3 -> {
                 System.out.println("\nMultiplication");
                 double a = readDouble(scanner, "Enter the first number: ");
                 double b = readDouble(scanner, "Enter the second number: ");
-                double result = multiplication.multiply(a, b);
-                System.out.println("Result: " + result);
+                try {
+                    double result = multiplication.multiply(a, b);
+                    System.out.println("Result: " + result);
+                }
+                catch (IllegalArgumentException e) {
+                    System.out.println(e.getMessage());
+                }
             }
             case 4 -> {
                 System.out.println("\nDivision");

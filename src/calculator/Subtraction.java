@@ -1,16 +1,16 @@
 package calculator; // Calculator-related classes.
 
+// By: Abdul Rahman Fornah At: afornah1@umbc.edu
 public class Subtraction { // Placeholder for subtraction behavior.
     // Prints the subtraction result.
-    public void subtract(double a, double b) {
+    public double subtract(double a, double b) {
         double result = 0;
         try {
             result = a - b;
-        } catch (Exception e) {
+        } catch (IllegalArgumentException e) {
             System.out.println("Error occurred during subtraction: " + e.getMessage());
-        } finally {
-            System.out.println("Subtraction: " + result);
         }
 
+        return result;
     }
 }

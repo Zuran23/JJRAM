@@ -8,10 +8,8 @@ public class Division { // Placeholder for division behavior.
         double result = 0;
         try {
             result = a / b;
-        } catch (ArithmeticException e) {
-            throw new RuntimeException(e);
-        } finally {
-            System.out.println("Division: " + result);
+        } catch (ArithmeticException | IllegalArgumentException e) {
+            System.out.println("Error occurred during division: " + e.getMessage());
         }
 
         return result;
