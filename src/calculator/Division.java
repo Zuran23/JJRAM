@@ -1,6 +1,20 @@
 package calculator; // Calculator-related classes.
 
-public class Division extends Calculater { // Placeholder for division behavior.
+// By: Abdul Rahman Fornah At: afornah1@umbc.edu
+public class Division { // Placeholder for division behavior.
+
+    // Prints the division result.
+    public double divide(double a, double b) {
+        double result = 0;
+        try {
+            result = a / b;
+        } catch (ArithmeticException e) {
+            throw new RuntimeException(e);
+        } finally {
+            System.out.println("Division: " + result);
+        }
+
+        return result;
+    }
 
 }
-
