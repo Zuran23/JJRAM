@@ -5,11 +5,11 @@ public class Division { // Placeholder for division behavior.
 
     // Prints the division result.
     public double divide(double a, double b) {
-        double result;
+        double result = 0;
         try {
             result = a / b;
         } catch (ArithmeticException | IllegalArgumentException e) {
-            throw new ArithmeticException(e.getMessage());
+            System.out.println("Error occurred during division: " + e.getMessage());
         }
 
         return result;
