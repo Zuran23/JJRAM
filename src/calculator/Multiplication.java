@@ -1,13 +1,14 @@
 package calculator; // Calculator-related classes.
 
-// Multiplication operations.
-public class Multiplication { // Placeholder for multiplication behavior.
-    public void multiply(double a, double b) {
-        double result = 0;
+//By: Max
+public class Multiplication {
+    // Multiplication operations.
+    public double multiply(double a, double b) {
+        double result;
         try {
             result = a * b;
             return result;
-        } catch (Exception e) {
+        } catch (ArithmeticException e) {
             System.out.println("Error during Multiplication: " + e.getMessage());
             return 0;
         }
