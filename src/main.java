@@ -26,16 +26,16 @@ void main() {
 
         switch (choice) {
             case 1 -> {
-                //System.out.println("\nAddition");
-                //double a = readDouble(scanner, "Enter the first number: ");
-                //double b = readDouble(scanner, "Enter the second number: ");
-                //try {
-                    //double result = addition.add(a, b);
-                    //System.out.println("Result: " + result);
-                //}
-                //catch (IllegalArgumentException e){
-                    //System.out.println(e.getMessage());
-                //}
+                System.out.println("\nAddition");
+                double a = readDouble(scanner, "Enter the first number: ");
+                double b = readDouble(scanner, "Enter the second number: ");
+                try {
+                    double result = addition.add(a, b);
+                    System.out.println("Result: " + result);
+                }
+                catch (IllegalArgumentException e){
+                    System.out.println(e.getMessage());
+                }
             }
             case 2 -> {
                 System.out.println("\nSubtraction");
