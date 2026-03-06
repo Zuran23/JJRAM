@@ -1,18 +1,18 @@
 package calculator; // Calculator-related classes.
+
 // By: Abdul Rahman Fornah At: afornah1@umbc.edu
 public class Division { // Placeholder for division behavior.
 
-    public void divide(double a, double b) {
+    // Prints the division result.
+    public double divide(double a, double b) {
         double result = 0;
         try {
             result = a / b;
-        } catch (ArithmeticException e) {
-            throw new RuntimeException(e);
-        } finally {
-            System.out.println("Division: " + result);
+        } catch (ArithmeticException | IllegalArgumentException e) {
+            System.out.println("Error occurred during division: " + e.getMessage());
         }
 
+        return result;
     }
 
 }
-
