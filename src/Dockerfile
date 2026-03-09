@@ -1,5 +1,5 @@
 # Use the OpenJDK 23 image as the base image
-                FROM ubuntu:latest
+                FROM amazoncorretto:latest
                 
                 # Create a new app directory for my application files
                 RUN mkdir /app
@@ -11,4 +11,4 @@
                 WORKDIR /app
                 
                 # Run the Main class
-                CMD java Main
+                CMD java HelloWorld
