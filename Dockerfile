@@ -1,5 +1,5 @@
 # Use the OpenJDK 23 image as the base image
-                FROM openjdk:23
+                FROM amazoncorretto:8-alpine3.22-dev
                 
                 # Create a new app directory for my application files
                 RUN mkdir /app
