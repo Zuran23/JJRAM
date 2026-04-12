@@ -17,3 +17,17 @@ Required GitHub Settings
 2. Require pull requests before merging.
 3. Require the CI workflow to pass before merging.
 4. Disable direct pushes to Approved-branch and master.
+
+Docker Usage
+
+This project includes a Dockerfile (in `src/`) that packages and runs the `HelloWorld.java` program using the Amazon Corretto JDK base image. Build the image from the repo root with the `src` folder as the build context:
+
+```
+docker build -t jjram-hello -f src/Dockerfile src
+```
+
+Run the container:
+
+```
+docker run --rm jjram-hello
+```

@@ -1,9 +1,18 @@
-package calculator; // Calculator-related classes.
+package calculator;
 
-// By: Abdul Rahman Fornah At: afornah1@umbc.edu
-public class Division { // Placeholder for division behavior.
+/**
+ * Provides division behavior for the calculator.
+ * <p>By: Abdul Rahman Fornah At: afornah1@umbc.edu</p>
+ */
+public class Division {
 
-    // Prints the division result.
+    /**
+     * Divides the first double by the second double.
+     *
+     * @param a the dividend
+     * @param b the divisor
+     * @return the quotient of a and b
+     */
     public double divide(double a, double b) {
         double result = 0;
         try {
@@ -14,5 +23,4 @@ public class Division { // Placeholder for division behavior.
 
         return result;
     }
-
 }

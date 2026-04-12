@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"calculator","l":"Addition"},{"l":"All Classes and Interfaces","u":"allclasses-index.html","k":"18"},{"p":"calculator","l":"Division"},{"p":"<Unnamed>","l":"HelloWorld"},{"p":"<Unnamed>","l":"main"},{"p":"calculator","l":"Multiplication"},{"p":"calculator","l":"Subtraction"}];updateSearchResults();

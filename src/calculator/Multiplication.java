@@ -1,8 +1,18 @@
-package calculator; // Calculator-related classes.
+package calculator;
 
-//By: Max
+/**
+ * Provides multiplication behavior for the calculator.
+ * <p>By: Max</p>
+ */
 public class Multiplication {
-    // Multiplication operations.
+
+    /**
+     * Multiplies two double values.
+     *
+     * @param a the first number
+     * @param b the second number
+     * @return the product of a and b
+     */
     public double multiply(double a, double b) {
         double result;
         try {
