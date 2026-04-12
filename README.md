@@ -31,3 +31,5 @@ Run the container:
 ```
 docker run --rm jjram-hello
 ```
+
+Javadoc is located in  the document folder (docs) and it explains are project code.
