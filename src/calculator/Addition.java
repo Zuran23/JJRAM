@@ -1,8 +1,18 @@
-package calculator; // Calculator-related classes.
-//By: Max
+package calculator;
 
-public class Addition { // Placeholder for addition behavior.
-    // Addition operations.
+/**
+ * Provides addition behavior for the calculator.
+ * <p>By: Max</p>
+ */
+public class Addition {
+
+    /**
+     * Adds two double values.
+     *
+     * @param a the first number
+     * @param b the second number
+     * @return the sum of a and b
+     */
     public double add(double a, double b) {
         double result = 0;
         try {
